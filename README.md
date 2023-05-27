@@ -1,24 +1,7 @@
-# projetotodo
+#  To-do List ✅
 
-## Project setup
-```
-npm install
-```
+- To-do List page built using Vue.js 3
+- Access the project at this link: https://luizottavioc.github.io/Vue-TodoList/
+<br>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![image](https://github.com/luizottavioc/Vue-TodoList/assets/89395176/6aacfc27-a26a-41b1-8582-db95d6f8ca8d)
