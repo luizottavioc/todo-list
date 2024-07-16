@@ -1,5 +1,6 @@
 <template>
     <div class="aloc-progress-bar">
+        <p class="progress-bar__text">{{ progress }}% completed</p>
         <div class="progress-bar">
             <div class="progress-bar__progress" :style="{ width: progress + '%' }"></div>
         </div>
@@ -20,15 +21,13 @@ export default {
             return localStorage.getItem(`dataLinesTodo`) ? JSON.parse(localStorage.getItem(`dataLinesTodo`)) : []
         },
         getNewPercent() {
-            let list = this.getListTodo();
-            let total = list.reduce((acc, item) => {
-                console.log(acc);
-                console.log(item);
+            const list = this.getListTodo();
+            const total = list.reduce((acc, item) => {
                 if (item.isCompleted) acc++;
                 return acc;
             }, 0);
 
-            return ((total / list.length) * 100).toFixed(2);
+            return (((total / list.length) * 100) || 0).toFixed(2);
         },
         updateProgress() {
             this.progress = this.getNewPercent();
@@ -53,8 +52,17 @@ export default {
     padding: 16px 64px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+}
+
+.aloc-progress-bar .progress-bar__text {
+    color: #E0E0E0;
+    text-shadow: 0px 2px 8px rgba(0,0,0, 0.2);
+    font-size: 9px;
+    font-weight: 700;
 }
 
 .aloc-progress-bar .progress-bar {

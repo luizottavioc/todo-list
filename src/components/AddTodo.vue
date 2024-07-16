@@ -46,7 +46,7 @@ export default {
     width: 50%;
     padding: 8px 16px;
     /* border: 2px solid #8a51d7; */
-    border: 2px solid #E0E0E0;
+    border: 3px solid #E0E0E0;
     border-radius: 8px;
     outline: none;
     color: #E0E0E0;
@@ -74,7 +74,7 @@ export default {
     border: none;
     font-size: 12px;
     font-weight: bolder;
-    font-style: italic;
+    /* font-style: italic; */
     cursor: pointer;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.05);
     transition: background-color 0.2s ease-in-out,

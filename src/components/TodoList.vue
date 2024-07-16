@@ -67,7 +67,7 @@ export default {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     background: #ffffff28;
     border-radius: 8px;
     opacity: 0.7;
